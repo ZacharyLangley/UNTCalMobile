@@ -10,9 +10,15 @@ export function loadEvents(){
 }
 
 export function updateEvents(eventsData){
-
+    return {
+        type: FETCH_EVENTS,
+        events: eventsData
+    }
 }
 
 export function updateSelectedDate(selectedDate){
-
+    return {
+        type: SET_DATE,
+        selectedDate: selectedDate
+    }
 }

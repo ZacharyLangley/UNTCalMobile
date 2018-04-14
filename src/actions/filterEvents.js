@@ -10,14 +10,23 @@ export function loadFilters(){
 
 }
 
-export function addFilter(){
-
+export function addFilter(filter){
+    return {
+        type: ADD_FILTER,
+        newFilter: filter
+    }
 }
 
-export function removeFilter(){
-
+export function removeFilter(filter){
+    return {
+        type: REMOVE_FILTER,
+        newFilter: filter
+    }
 }
 
 export function updateFilters(filtersData){
-
+    return {
+        type: FETCH_FILTERS,
+        filters: filtersData
+    }
 }

@@ -4,7 +4,6 @@ import { Container, Header, Left, Body, Right, Button, Icon, Title } from 'nativ
 class NavBar extends Component {
     render(){
         return(
-            <Container>
                 <Header>
                     <Left>
                         <Button transparent>
@@ -16,12 +15,10 @@ class NavBar extends Component {
                     </Body>
                     <Right>
                         <Button transparent>
-                            <Icon name='search' />
                             <Icon name='more' />
                         </Button>
                     </Right>
                 </Header>
-            </Container>
         );
     }
 }

@@ -1,10 +1,27 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { Container, Header, Left, Body, Right, Button, Icon, Title } from 'native-base';
 
 class NavBar extends Component {
     render(){
         return(
-          <Text>Navbar Works!</Text>  
+            <Container>
+                <Header>
+                    <Left>
+                        <Button transparent>
+                            <Icon name='menu' />
+                        </Button>
+                    </Left>
+                    <Body>
+                        <Title>UNT Events</Title>
+                    </Body>
+                    <Right>
+                        <Button transparent>
+                            <Icon name='search' />
+                            <Icon name='more' />
+                        </Button>
+                    </Right>
+                </Header>
+            </Container>
         );
     }
 }

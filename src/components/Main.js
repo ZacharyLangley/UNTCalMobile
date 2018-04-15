@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native'
-
+import { Container, Content } from 'native-base';
 // Components
+import Body from './Body/Body';
 import NavBar from './NavBar/NavBar';
 
 class Main extends Component {
     render(){
         return(
-            <View>
-                <Text>Main Container</Text>
+            <Container>
                 <NavBar />
-            </View>
+                <Content>
+                    <Body />
+                </Content>
+            </Container>
         );
     }
 }
